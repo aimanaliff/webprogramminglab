@@ -37,17 +37,23 @@ nav {
   font-weight: bold;
   font-size: 1.5em;
   padding-top: 10px;
+  float: left;
+  width: 200px;
 }
 
 nav a {
   text-decoration: none;
 }
 
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 main {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 2em;
-  display: block;
+  padding: 0 0 2em 0;
+  margin-left: 200px;
+  background-color: #fef6c2;
 }
 
 footer {
