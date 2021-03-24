@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+header,
+nav,
+main,
+footer {
+  display: block;
+}
+
 body {
   background-color: #fcebb6;
   color: #221811;
