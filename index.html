@@ -17,24 +17,7 @@
       <a href="book.html" class="special"
         ><button type="button">Book Tour</button></a
       >
-      <button onclick="myFunction()">Try it</button>
     </div>
-
-    <script>
-      var tag = document.querySelectorAll("li");
-      for (var i = 0; i < tag.length; i++) {
-        console.log(tag[i]);
-      }
-
-      var special = document.querySelector("a.special");
-      special.addEventListener("mouseover", function () {
-        alert((this.textContent = "Book a tour"));
-      });
-
-      function myFunction() {
-        var styles = document.getElementById("there");
-        styles.classList.toggle("mystyle");
-      }
-    </script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
