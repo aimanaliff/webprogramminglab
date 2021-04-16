@@ -1,0 +1,15 @@
+.container {
+  background-color: rgb(255, 255, 255);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.col a:link {
+  text-decoration: none;
+}
