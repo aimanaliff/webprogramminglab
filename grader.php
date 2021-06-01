@@ -1,6 +1,13 @@
 <?php
 // $scores = array(90, 98, 89, 100, 100, 86);
-$scores = array(40, 65, 77, 82, 80, 54, 73, 63, 95, 49);
+$scores = array(
+    $_POST["score1"],
+    $_POST["score2"],
+    $_POST["score3"],
+    $_POST["score4"],
+    $_POST["score5"],
+    $_POST["score6"]
+);
 
 $sum = array_sum($scores);
 $count = count($scores);
@@ -27,16 +34,24 @@ echo "Average grade is " . checkGrade($avg);
 function checkGrade($average): string
 {
     if ($average >= 80) {
-        return "A";
+        return "A <br>";
     } else if ($average >= 60) {
-        return "B";
+        return "B <br>";
     } else if ($average >= 40) {
-        return "C";
+        return "C <br>";
     } else if ($average >= 20) {
-        return "D";
+        return "D <br>";
     } else if ($average >= 1) {
-        return "E";
+        return "E <br>";
     } else {
-        return "F";
+        return "F <br>";
     }
 }
+
+// testing get method
+// echo $_GET["score1"] . "<br>";
+// echo $_GET["score2"] . "<br>";
+// echo $_GET["score3"] . "<br>";
+// echo $_GET["score4"] . "<br>";
+// echo $_GET["score5"] . "<br>";
+// echo $_GET["score6"] . "<br>";
